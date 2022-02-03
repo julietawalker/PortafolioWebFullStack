@@ -1,19 +1,38 @@
 html {
-  font-size: 11px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-size: 12px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
   font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
 }
+
+header{
+  position:relative;
+  }
 
 body {
   width: 900px;
   margin: 0 auto;
-  padding: 0 20px 20px 20px;
+  padding: 5px 20px 20px 20px;
   border: 2px solid black;
   border-radius: 5px;
 }
-
-.PrimerCuadro{
-  position:absolute;
+#logo-argpro{
+  border-radius:10px;
+  width:10%;
+  padding: 5px 0px 5px 0px;
+  float:left;
+  position:relative;
 }
+.buttons{
+  position: absolute;
+  font-size: 20px;
+  right:0;
+  top:5px;
+}
+
+.PrimerCuadrado{
+  width: 900px;
+}
+
+
 
 #profile-image{
   border-radius:150px;
@@ -22,6 +41,12 @@ body {
   float:left
   }
 
+  #profil-background img{
+    height: 200px; 
+    width: 850px; 
+    border-radius:10px;
+   }
+   
 #info-data{
   border-radius: 5px;
   position:relative;
@@ -29,9 +54,9 @@ body {
   left: 15px;
 }
 
-.experiencia{
-  height: 180vh;
-  background-color: rgb(51, 142, 216);
+.AcercaDe{
+  background-color: rgb(202, 225, 243);
+  border-radius: 5px;
 }
 h1 {
   font-size: 35px;
