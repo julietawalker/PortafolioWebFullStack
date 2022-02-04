@@ -1,6 +1,7 @@
 html {
   font-size: 12px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
   font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+display: block;
 }
 
 header{
@@ -28,11 +29,9 @@ body {
   top:5px;
 }
 
-.PrimerCuadrado{
+.Primer-cuadrado{
   width: 900px;
 }
-
-
 
 #profile-image{
   border-radius:150px;
@@ -41,11 +40,11 @@ body {
   float:left
   }
 
-  #profil-background img{
+#profil-background img{
     height: 200px; 
     width: 850px; 
     border-radius:10px;
-   }
+ }
    
 #info-data{
   border-radius: 5px;
@@ -54,9 +53,28 @@ body {
   left: 15px;
 }
 
-.AcercaDe{
-  background-color: rgb(202, 225, 243);
+.contenedor1{
+  background-color: rgba(149, 147, 241, 0.966);
   border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 5px;
+  position: relative;
+  width:850px;
+ }
+.contenedor1 h3{
+color:white;
+}
+.experiencia-laboral{
+  margin-bottom: 5px;
+  position: relative;
+  
+}
+ .experiencia-laboral img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  float:left;
+  margin:5px 10px;
 }
 h1 {
   font-size: 35px;
@@ -69,3 +87,4 @@ El segundo valor en píxeles asigna el desplazamiento vertical de la sombra desd
 El tercer valor en píxeles asigna radio de desenfoque de la sombra —un valor grande es igual a una sombra borrosa—.
 El cuarto valor asigna el color base de la sombra.*/
 }
+
