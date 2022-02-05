@@ -1,3 +1,4 @@
+<!-- Proyecto Integrador  Argentina Programa -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,10 +7,10 @@
 		<link rel="icon" href="estrella.ico">
 		<meta name="viewimport" content= "width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-		<link rel="StyleSheet" href="Estilo/Style.css" Media=screen>
 		<script src="https://kit.fontawesome.com/bada708948.js" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script></body>
-		<title>Ing. Julieta Walker</title>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
+	    <link rel="StyleSheet" href="Estilo/Style.css" Media=screen>	
+	
 	</head>
 
 <body>
@@ -25,44 +26,62 @@
 		</div>
 	</nav>
 	</header>
- 
+
 	<main>
 	<article class="Primer-cuadro">
 		<div id="profil-background"><img src="Fondo portada.jpg" alt="Foto portada" ></div>
-		<div class="portada" id="info" style="padding:16px">
-			<div id="info imag">
-			<img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQEIPGLxw9VuCA/profile-displayphoto-shrink_400_400/0/1517469273291?e=1649289600&v=beta&t=Gvfnir5K8A5XveArxxFQdqk9YoDcpPxP20qTejc_Yz4" alt="Foto Perfil" width=150px height=150px>
-		<div id="info-data">
-			<h1>Julieta Walker</h1>
-			<div id="info-company"><h2>Analista Sr. Mejora de Procesos en Natura</h2></div>
-			<div id="info-ubicacion">Buenos Aires, Argentina</div>
+		
+		<div class="portada">
+			<div class="info-imag">
+				<img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQEIPGLxw9VuCA/profile-displayphoto-shrink_400_400/0/1517469273291?e=1649289600&v=beta&t=Gvfnir5K8A5XveArxxFQdqk9YoDcpPxP20qTejc_Yz4" alt="Foto Perfil" width=150px height=150px>
+				<div class="btn-edit" id="actualizarfoto" onclick="CambiarFotoPerfil()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+			</div>
+
+			<div>
+				<input id="edit-skill" type="file" oninput="myFunction3(this.value)" style="display:none">
+			</div>
+
+			<div class="info-personal">
+				<h1>Julieta Walker</h1>
+				<div><h2>Analista Sr. Mejora de Procesos en Natura</h2></div>
+				<div>Buenos Aires, Argentina</div>
+			</div>
 		</div>
 	</article>
 
 	<article class="contenedor1">
 		<div class="Acerca-de">
+			<div class="btn-edit" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
 			<h3>Acerca de</h3>
-			<p> Ingeniera Química de la UTN, graduada con Mención de Honor. Me interesan los proyectos orientados
+			
+		</div>	
+		<div><p id="texto-acercade"> Ingeniera Química de la UTN, graduada con Mención de Honor. Me interesan los proyectos orientados
 			al desarrollo sustentable, optimizando el uso de recursos a través de la mejora de procesos.
 			<br>
 			Soy una profesional proactiva y perseverante, con un perfil analítico, detallista y resolutivo. Me
 			entusiasma el desafío de analizar situaciones identificando los síntomas y factores adversos para
 			encontrar la mejor solución. Agente impulsor del cambio.
 			<br>
-			Valoro el trabajo en equipo y el desarrollo de buenas relaciones interpersonales
-			</p>
+			Valoro el trabajo en equipo y el desarrollo de buenas relaciones interpersonales</p>
 		</div>
+		<div>
+			<input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+		</div>
+		
 	</article>
 
 	<article class="contenedor1">
 		<div class="experiencia-laboral">
 		<h3>Experiencia</h3>
 			<img src="https://www.thegeniuschoice.com/wp-content/uploads/2019/03/Logo-Natura-1024x771.jpg" alt="Logo Natura" class="logo-empresa1">
-			<h6>Analista Sr. Mejora de procesos en <b>Natura</b></h6>
+			<h5>Analista Sr. Mejora de procesos en <b>Natura</b></h5>
+			<hr style="clear:both">
 			<img src="https://ageera.com.ar/wp-content/uploads/2020/07/Logo-Genneia500.gif" alt="Logo Genneia" class="logo-empresa1">
-			<h6>Analista Sr. Calidad y Procesos en <b>Genneia</b></h6>
+			<h5>Analista Sr. Calidad y Procesos en <b>Genneia</b></h5>
+			<hr style="clear:both">
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_CNEA.svg/900px-Logo_CNEA.svg.png" alt="Logo Genneia" class="logo-empresa1">
-			<h6>Responsable del Seguimiento de No Conformidades en <b>CNEA</b></h6>
+			<h5>Responsable del Seguimiento de No Conformidades en <b>CNEA</b></h5>
+			<hr style="clear:both">
 			
 		</div>
 		<div class="educación">
@@ -74,7 +93,49 @@
 			</ul>
 		</div>
 	</article>
+
+	<article class="contenedor1">
+		<div class="Skills">
+			<h3>Hard & soft Skills</h3>
+			<div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+
+
+		</div>	
+	
+		<div>
+			<input id="edit-skill" type="text" oninput="myFunction2(this.value)" style="display:none">
+		</div>
+	
+	</article>
+
+
 </main>
 
 </body>
+
+<script>
+	function cambiar_parrafo(){
+		document.getElementById("edit-acercade").style.display="block";
+		let texto = document.getElementById("texto-acercade").innerText;
+		console.log(texto)
+		};
+
+	function myFunction2(valor){
+		document.getElementById("texto-acercade").innerText=valor;
+	};
+	
+	/*Ocultar la barra cuando se modifique el texto*/
+	let texacercade = document.getElementById("edit-acercade")
+	texacercade.addEventListener('keyup',(e)=>{
+	if (e.key=="Enter")
+	{document.getElementById("edit-acercade").style.display="none"}});
+
+	/*Mostrar la barra al cliquear el botón de editar*/
+	function CambiarFotoPerfil(){
+		document.getElementById("edit-acercade").style.display="block";
+		let FotoPerfil = document.getElementById("texto-acercade").innerText;
+		console.log(texto)
+		};
+
+</script>
 </html>

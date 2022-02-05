@@ -1,5 +1,7 @@
+/*Estilos del proyecto integrador*/
+
 html {
-  font-size: 12px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-size: 13px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
   font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
 display: block;
 }
@@ -28,16 +30,29 @@ body {
   right:0;
   top:5px;
 }
+.btn-edit a{
+  color:black;
+  size: 20px;
+}
+
+#actualizarfoto{
+  position:relative;
+  left: 8px;
+  margin-top: 10%;
+  font-size: 15px;
+  float:left;
+}
 
 .Primer-cuadrado{
   width: 900px;
+  position:relative;
 }
 
 #profile-image{
   border-radius:150px;
   position: relative;
-  bottom: 60px;
-  float:left
+  bottom: 40px;
+  float:left;
   }
 
 #profil-background img{
@@ -46,40 +61,41 @@ body {
     border-radius:10px;
  }
    
-#info-data{
+.info-personal{
   border-radius: 5px;
-  position:relative;
-  bottom: 20px;
-  left: 15px;
+  float:left;
+  margin: 0% 3%;
+  bottom:20px;
 }
 
 .contenedor1{
-  background-color: rgba(149, 147, 241, 0.966);
+  clear:both;
+  background-color: rgba(247, 201, 103, 0.966);
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 5px;
   position: relative;
   width:850px;
  }
-.contenedor1 h3{
-color:white;
+
+.contenedor1 a{
+  float:right;
 }
 .experiencia-laboral{
   margin-bottom: 5px;
   position: relative;
-  
+    
 }
  .experiencia-laboral img{
   width: 30px;
   height: 30px;
-  position: absolute;
   float:left;
   margin:5px 10px;
 }
 h1 {
   font-size: 35px;
   margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   color: lightslategrey;
   text-shadow: 1px -1px 1px black; 
   /*Primer valor en píxeles: asigna el desplazamiento horizontal de la sombra desde el texto —qué tan lejos la mueve a la derecha—. Un valor negativo la moverá a la izquierda.
