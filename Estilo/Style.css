@@ -70,16 +70,22 @@ body {
 
 .contenedor1{
   clear:both;
-  background-color: rgba(247, 201, 103, 0.966);
+  border: 1.4px solid rgb(80, 118, 241);
+  background-color: rgb(220, 220, 235);
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 5px;
   position: relative;
-  width:850px;
+  width:100%;
  }
 
 .contenedor1 a{
   float:right;
+  padding-bottom: 0%;
+}
+
+.contenedor1 p,ul{
+  margin-bottom: 0px;
 }
 .experiencia-laboral{
   margin-bottom: 5px;
@@ -94,6 +100,7 @@ body {
 }
 h1 {
   font-size: 35px;
+  display:inline-block;
   margin: 0;
   padding: 10px 0;
   color: lightslategrey;
@@ -104,3 +111,9 @@ El tercer valor en píxeles asigna radio de desenfoque de la sombra —un valor 
 El cuarto valor asigna el color base de la sombra.*/
 }
 
+h1 div{
+  display: inline-block;
+  margin-right: 10px;
+ }
+
+ h3{font-style: italic;}
