@@ -1,0 +1,31 @@
+<header>
+    <img id="logo-argpro" src="../assets/Argentina programa.jpg" alt="logo del programa">
+    <div class="buttons">
+      <a href="https://twitter.com/JWalkiria" class="fab fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/julieta-walker-46279391/" class="fab fa-linkedin" target="blank"></a>
+      <a href="https://www.instagram.com/julieta.walker/" class="fab fa-instagram"></a>
+      <a href="https://www.facebook.com/julieta.walker" class="fab fa-facebook"></a>
+      <a href="Log in.html" class="btn btn-primary">Ingresar </a>
+    </div>
+  </header>
+  
+  <article class="Primer-cuadro">
+    <div id="profil-background"><img src="../assets/Fondo portada.jpg" alt="Foto portada" ></div>
+    
+    <div class="portada">
+      <div class="info-imag">
+        <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQEIPGLxw9VuCA/profile-displayphoto-shrink_400_400/0/1517469273291?e=1649289600&v=beta&t=Gvfnir5K8A5XveArxxFQdqk9YoDcpPxP20qTejc_Yz4" alt="Foto Perfil" width=150px height=150px>
+        <div class="btn-edit" id="actualizarfoto" onclick="CambiarFotoPerfil()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+        </div>
+      </div>
+  
+      <div><input id="edit-foto" type="file" onchange="showFile(this)" style="display:none">
+      </div>
+  
+      <div class="info-personal">
+        <h1><div id="Nombre"> </div><div id="Apellido"></div></h1>
+        <div><h2 id="PosicionActual"></h2></div>
+        <div>Buenos Aires, Argentina</div>
+      </div>
+    </div>
+  </article>

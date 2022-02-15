@@ -1,0 +1,22 @@
+.Skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:0px 15px;
+    align-items: center;
+   }
+.Skills p{
+    margin-right: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color:rgba(81, 63, 247, 0.788);
+    }
+
+   .progress{
+    width:200px;
+    margin:0;
+  }
+
+ .borrar-editar{
+     display: inline-flex;
+ }
