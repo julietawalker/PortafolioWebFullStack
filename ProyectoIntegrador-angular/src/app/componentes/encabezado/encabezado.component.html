@@ -14,7 +14,7 @@
     
     <div class="portada">
       <div class="info-imag">
-        <img id="profile-image" src="https://media-exp1.licdn.com/dms/image/C4E03AQEIPGLxw9VuCA/profile-displayphoto-shrink_400_400/0/1517469273291?e=1649289600&v=beta&t=Gvfnir5K8A5XveArxxFQdqk9YoDcpPxP20qTejc_Yz4" alt="Foto Perfil" width=150px height=150px>
+        <img id="profile-image" [src]="miPorfolio.img_profile" alt="Foto Perfil" width=150px height=150px>
         <div class="btn-edit" id="actualizarfoto" onclick="CambiarFotoPerfil()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
         </div>
       </div>
@@ -23,9 +23,9 @@
       </div>
   
       <div class="info-personal">
-        <h1><div id="Nombre"> </div><div id="Apellido"></div></h1>
-        <div><h2 id="PosicionActual"></h2></div>
-        <div>Buenos Aires, Argentina</div>
+        <h1><div id="Nombre">{{miPorfolio.name}} </div><div id="Apellido">{{miPorfolio.lastname}}</div></h1>
+        <div><h3 id="PosicionActual">{{miPorfolio.position}}</h3></div>
+        <div>{{miPorfolio.address.city}} ({{miPorfolio.address.country}}) </div>
       </div>
     </div>
   </article>

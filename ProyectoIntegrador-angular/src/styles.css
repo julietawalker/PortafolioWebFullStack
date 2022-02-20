@@ -2,7 +2,7 @@
 /*Estilos del proyecto integrador*/
 
 html {
-  font-size: 14px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+  font-size: 16px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
   font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
 display: block;
 }
@@ -25,26 +25,13 @@ body {
   float:left;
   position:relative;
 }
-.buttons{
-  position: absolute;
-  font-size: 20px;
-  right:0;
-  top:5px;
-  margin-right: 10px;
-}
+
 .btn-edit i{
   color:black;
-  size: 20px;
+  size: 25px;
   margin-left: 10px;
 }
 
-#actualizarfoto{
-  position:relative;
-  left: 8px;
-  margin-top: 10%;
-  font-size: 15px;
-  float:left;
-}
 
 .Primer-cuadrado{
   width: 900px;
@@ -55,6 +42,7 @@ body {
   border-radius:150px;
   position: relative;
   bottom: 40px;
+  left:15px;
   float:left;
   }
 
@@ -82,7 +70,7 @@ body {
   width:100%;
  }
 
-.contenedor1 a{
+.contenedor1 .btn-edit{
   float:right;
   padding-bottom: 0%;
 }
@@ -95,7 +83,6 @@ body {
 }
 
 h1 {
-  font-size: 35px;
   display:inline-block;
   margin: 0;
   padding: 10px 0;
@@ -112,24 +99,14 @@ h1 div{
   margin-right: 10px;
  }
 
- h3{font-style: italic;
-margin-bottom: 15px;}
-
-
-.tituloProyectos{
-  text-indent: 30px;
+h3{font-style: italic;
+margin-bottom: 15px;
 }
 
-.Proyectos h4{
+h4{
   color:rgba(81, 63, 247, 0.788);
   }
 
-.tituloProyectos i{
-  display: inline-block;
-  margin-right: 10px;
-  
-  }
-
-  .carreras{
-    display: block;
-  }
+ .Skills h4{
+  padding-left: 15px;
+}

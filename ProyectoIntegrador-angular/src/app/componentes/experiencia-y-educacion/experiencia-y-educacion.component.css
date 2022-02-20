@@ -1,6 +1,34 @@
-.logo{
-    max-width: 70px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+h4,p{
+    color:black;
+}
+
+.logo-image{
+    float:left;
+    max-width:12%;
+    margin-right: 25px;
+    border-radius: 15px;
+}
+.experiencia-laboral{
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+.editar{
+    display:inline-block;
+    margin-left: 15px;
+    vertical-align: top;
+}
+.list-info{
+    display: inline-block;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+.contenedor1{
+    padding-bottom: 0px;
+}
+.contenedor1 h1{
+    margin-bottom: 15px;
 }

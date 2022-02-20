@@ -1,22 +1,38 @@
-.Skills{
+.ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin:0px 15px;
     align-items: center;
-   }
+}
+
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.Skills{
+    text-align:center;
+    left:50px;
+    margin-top: 15px;
+}
 .Skills p{
     margin-right: 20px;
-    font-weight: bold;
+    color: rgb(51, 45, 58);
+    font-size: 16px;
     font-style: italic;
-    color:rgba(81, 63, 247, 0.788);
-    }
+}
 
-   .progress{
-    width:200px;
+.progress{
+    width:400px;
     margin:0;
-  }
+}
 
- .borrar-editar{
+.progress.progress-striped{
+    vertical-align: bottom;
+
+}
+.Barra{
      display: inline-flex;
- }
+     margin-top: 5px;
+}
