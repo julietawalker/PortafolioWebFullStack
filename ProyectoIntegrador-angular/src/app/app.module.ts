@@ -19,6 +19,7 @@ import { HttpClientModule} from '@angular/common/http';
     SkillsComponent,
     ProyectosComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,4 +28,5 @@ import { HttpClientModule} from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

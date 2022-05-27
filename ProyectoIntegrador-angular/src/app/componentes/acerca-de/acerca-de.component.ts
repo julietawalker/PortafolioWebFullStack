@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { Persona } from 'src/assets/data/Interfaces';
 
 @Component({
   selector: 'app-acerca-de',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDeComponent implements OnInit {
 
-  constructor() { }
+  Persona: Persona[]=[];
+  constructor(private datosPorfolio:PorfolioService) { }
 
   ngOnInit(): void {
+    this.datosPorfolio.getPersona().subscribe(data=>{
+        this.Persona=(data);
+    })
+
+
   }
 
 }

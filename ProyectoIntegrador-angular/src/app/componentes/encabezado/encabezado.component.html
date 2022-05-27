@@ -14,7 +14,7 @@
     
     <div class="portada">
       <div class="info-imag">
-        <img id="profile-image" [src]="miPorfolio.img_profile" alt="Foto Perfil" width=150px height=150px>
+        <img id="profile-image" [src]=Persona[0].img_profile alt="Foto Perfil" width=150px height=150px>
         <div class="btn-edit" id="actualizarfoto" onclick="CambiarFotoPerfil()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
         </div>
       </div>
@@ -23,9 +23,9 @@
       </div>
   
       <div class="info-personal">
-        <h1><div id="Nombre">{{miPorfolio.name}} </div><div id="Apellido">{{miPorfolio.lastname}}</div></h1>
-        <div><h3 id="PosicionActual">{{miPorfolio.position}}</h3></div>
-        <div>{{miPorfolio.address.city}} ({{miPorfolio.address.country}}) </div>
+        <h1><div id="Nombre">{{Persona[0].name}} </div><div id="Apellido">{{Persona[0].lastname}}</div></h1>
+        <div><h3 id="PosicionActual">{{Persona[0].position}}</h3></div>
+        <div>{{Persona[0].address.city}} ({{Persona[0].address.country}}) </div>
       </div>
     </div>
   </article>

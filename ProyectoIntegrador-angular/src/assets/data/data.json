@@ -5,7 +5,8 @@
     "img_profile": "https://media-exp1.licdn.com/dms/image/C4E03AQEIPGLxw9VuCA/profile-displayphoto-shrink_400_400/0/1517469273291?e=1649289600&v=beta&t=Gvfnir5K8A5XveArxxFQdqk9YoDcpPxP20qTejc_Yz4",
     "position": "Analista Sr. Mejora de Procesos",
     "img_bg_header": "../assets/Fondo portada.jpg",
-      "address": {
+    "acerca_de": "Ingeniera Química, graduada con Mención de Honor. Scrum Master y Black Black Belt en Lean Six Sigma. Dedidaca a la mejora de procesos.",
+    "address": {
       "street": "Pestalozzi 3586",
       "city": "Ciudad Autónoma de Buenos Aires",
       "province": "Capital Federal",
@@ -63,11 +64,11 @@
         { "name": "PowerBi",
           "percentage": 80
         },
-      { "name": "HTML",
-        "percentage": 40
+      { "name": "SQL",
+        "percentage": 50
       },
       { "name": "Javascript",
-        "percentage": 40
+        "percentage": 10
       }
     ],
     "Softskill": [

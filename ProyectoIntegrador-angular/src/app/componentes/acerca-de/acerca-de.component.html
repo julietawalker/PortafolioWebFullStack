@@ -3,14 +3,7 @@
       <div class="btn-edit" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
       <h3>Acerca de</h3>
     </div>	
-    <div><p id="texto-acercade"> Ingeniera Química de la UTN, graduada con Mención de Honor. Me interesan los proyectos orientados
-      al desarrollo sustentable, optimizando el uso de recursos a través de la mejora de procesos.
-      <br>
-      Soy una profesional proactiva y perseverante, con un perfil analítico, detallista y resolutivo. Me
-      entusiasma el desafío de analizar situaciones identificando los síntomas y factores adversos para
-      encontrar la mejor solución. Agente impulsor del cambio.
-      <br>
-      Valoro el trabajo en equipo y el desarrollo de buenas relaciones interpersonales</p>
+    <div><p id="texto-acercade"> {{Persona[0].acerca_de}}
     </div>
     <div>
       <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
