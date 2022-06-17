@@ -36,7 +36,7 @@ export class PorfolioService {
 
   AddExp(experiencia: experiencia): Observable<experiencia>{
     console.log(experiencia);
-    return this.http.post<experiencia>(`${this.apiURL}`,experiencia,httpOptions).pipe(map((response:experiencia) => {return response}));
+    return this.http.post<experiencia>(this.apiURL,experiencia,httpOptions);
   }
 
   getEducacion(): Observable<educacion[]>{
