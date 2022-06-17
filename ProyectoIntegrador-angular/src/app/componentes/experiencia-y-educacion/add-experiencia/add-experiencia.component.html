@@ -1,0 +1,61 @@
+<div class="btn-edit" onclick=""><a href="#" class="btn-right">
+    <i class="fas fa-plus"></i></a>
+</div>
+
+<form class="add-exp" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="text">Posición</label>
+        <input 
+        class="col-sm-6" 
+        type="text" 
+        name="posicion" 
+        id="addposi"
+        [(ngModel)]="position"
+        >
+
+    </div>
+
+    <div class="form-group">
+        <label for="text">Empresa/ Organización</label>
+        <input 
+        type="text"
+        name="empresa" 
+        id="addempresa"
+        [(ngModel)]="institution"
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha inicio</label>
+        <input 
+        type="month" 
+        name="fecha_ini" 
+        id="addInicioExp"
+        [(ngModel)]="start_year"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha Fin</label>
+        <input 
+        type="month" 
+        name="Fin" 
+        id="addFinExp"
+        [(ngModel)]="end_year"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="logo_empresa"> URL Logo Empresa</label>
+        <input 
+        type="string" 
+        name="logo_empresa" 
+        id="addLogoEmp"
+        [(ngModel)]="img"
+        > 
+    </div>
+
+    <button type="submit" class="btn btn-block">Sumar Experiencia</button>
+
+</form>
+

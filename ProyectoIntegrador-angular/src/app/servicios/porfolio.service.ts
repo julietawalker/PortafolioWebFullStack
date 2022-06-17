@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHandler} from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpHandler} from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { experiencia } from 'src/assets/data/ExperienciaInter';
-import { educacion } from 'src/assets/data/FormacionInter';
-import { Softskill, Hardskill, project, Persona } from 'src/assets/data/Interfaces';
+import {map} from 'rxjs/operators';
+import { educacion, experiencia, Softskill, Hardskill, project, Persona } from '../../../src/assets/data/Interfaces';
+
+const httpOptions = {
+  headers: new HttpHeaders({'Content-type':'aplication/json'})}
+
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +26,17 @@ export class PorfolioService {
   //Desde el Servicio y el archivo experiencia
   getExperiencia(): Observable<experiencia[]>{
     return this.http.get<experiencia[]>(this.apiURL)
+  }
+
+  deleteExp(experiencia: experiencia): Observable<experiencia>{
+    console.log(experiencia.id)
+    const url=`${this.apiURL}/${experiencia.id}`
+    return this.http.delete<experiencia>(url);
+  }
+
+  AddExp(experiencia: experiencia): Observable<experiencia>{
+    console.log(experiencia);
+    return this.http.post<experiencia>(`${this.apiURL}`,experiencia,httpOptions).pipe(map((response:experiencia) => {return response}));
   }
 
   getEducacion(): Observable<educacion[]>{

@@ -1,11 +1,11 @@
 <article class="contenedor1">
   <div class="experiencia-laboral">
-    <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fas fa-plus"></i></a>
-    </div>
+    <app-add-experiencia (onAddExperiencia)="addExperiencia($event)"
+    ></app-add-experiencia>
+    
     <h3>Experiencia</h3>
-  
-    <ul class="posiciones">
-      <li *ngFor="let experiencia of experienciaLista2">
+      <ul class="posiciones">
+      <li *ngFor="let experiencia of experienciaLista">
         <div class="data-container">
           <a href="#">
             <div class="logo-image-container">
@@ -13,12 +13,12 @@
             </div>
             <div class="list-info">
               <h4>{{experiencia.position}} en <b>{{experiencia.institution}}</b></h4>
-              <p><time>{{experiencia.start_month}}/{{experiencia.start_year}}</time> - <time>{{experiencia.end_month}}/{{experiencia.end_year}}</time></p>
+              <p><time>{{experiencia.start_year}}</time> - <time>{{experiencia.end_year}}</time></p>
               </div>
           </a>
         <div class="editar">
-          <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
-          <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+          <div class="btn-edit" (click)="onDelete(experiencia)"><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
+          <div class="btn-edit" (click)="actualizarExp(experiencia)"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         </div>
         </div>
         <br clear>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PorfolioService } from 'src/app/servicios/porfolio.service';
-import { Persona } from 'src/assets/data/Interfaces';
+import{Persona} from 'src/assets/data/Interfaces';
+
 
 @Component({
   selector: 'app-encabezado',
@@ -18,7 +19,6 @@ export class EncabezadoComponent implements OnInit {
       this.Persona=(persona);
     });
   }
-
   
 
 }
