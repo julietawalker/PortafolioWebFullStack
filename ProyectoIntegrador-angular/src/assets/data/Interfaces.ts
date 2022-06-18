@@ -25,12 +25,13 @@ export interface experiencia{
 }
 
 export interface educacion{
+    id?:number;
     institution: string;
     title: string;
     img?: string;
     score: number;
-    start: number;
-    end?:number;
+    start: string;
+    end?:string;
 }
 
 export interface Hardskill{

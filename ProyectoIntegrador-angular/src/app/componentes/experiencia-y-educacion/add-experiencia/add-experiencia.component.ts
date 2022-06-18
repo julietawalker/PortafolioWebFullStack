@@ -1,5 +1,9 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { experiencia} from 'src/assets/data/Interfaces';
+import { UiService } from 'src/app/servicios/ui.service';
+import { Subscription } from 'rxjs';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-add-experiencia',
@@ -15,9 +19,13 @@ export class AddExperienciaComponent implements OnInit {
   img:string="";
   start_year:string="";
   end_year:string="";
+  showAddexp:boolean=false;
+  subscription?:Subscription;
 
 
-  constructor() { }
+  constructor(private uiService:UiService) { 
+    this.subscription=this.uiService.onToggle().subscribe(value => this.showAddexp=value);
+  }
 
   ngOnInit(): void {
   }
@@ -42,6 +50,12 @@ export class AddExperienciaComponent implements OnInit {
     console.log(newExperience);
     this.onAddExperiencia.emit(newExperience);
   }
+
+  addExperiencia(){
+    this.uiService.toggleAddExp();
+    console.log(this.showAddexp)
+  }
+
 }
 
 

@@ -11,7 +11,7 @@ import { experiencia, educacion } from 'src/assets/data/Interfaces';
 })
 export class ExperienciaYEducacionComponent implements OnInit {
 
-  @Output() onDeleteExp: EventEmitter<experiencia> = new EventEmitter()
+  @Output() onDeleteExperiencia: EventEmitter<experiencia> = new EventEmitter()
 
   experienciaLista: experiencia[]=[];
   educacionLista: educacion[]=[];
@@ -29,7 +29,8 @@ export class ExperienciaYEducacionComponent implements OnInit {
 
   }
 
-  onDelete(experiencia: experiencia){
+  //Funciones de Experiencia
+  onDeleteExp(experiencia: experiencia){
     this.PorfolioService.deleteExp(experiencia).subscribe(()=>
     this.experienciaLista= this.experienciaLista.filter(t=>t.id!== experiencia.id))
   }
@@ -39,10 +40,21 @@ export class ExperienciaYEducacionComponent implements OnInit {
   }
 
   addExperiencia(experiencia: experiencia){
-    console.log(experiencia)
-      this.PorfolioService.AddExp(experiencia).subscribe((exp) =>{
+        this.PorfolioService.AddExp(experiencia).subscribe((exp) =>{
         this.experienciaLista.push(exp);
         console.log(exp);}
+        );
+  }
+
+  //Funciones de Educacion
+  onDeleteEducacion(educacion: educacion){
+    this.PorfolioService.deleteEducacion(educacion).subscribe(()=>
+    this.educacionLista= this.educacionLista.filter(t=>t.id!== educacion.id))
+  } 
+  
+  addEducacion(educacion: educacion){
+      this.PorfolioService.AddEducacion(educacion).subscribe((educacion) =>{
+        this.educacionLista.push(educacion);}
         );
   }
 

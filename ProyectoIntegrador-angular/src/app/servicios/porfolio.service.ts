@@ -5,7 +5,7 @@ import {map} from 'rxjs/operators';
 import { educacion, experiencia, Softskill, Hardskill, project, Persona } from '../../../src/assets/data/Interfaces';
 
 const httpOptions = {
-  headers: new HttpHeaders({'Content-type':'aplication/json'})}
+  headers: new HttpHeaders({'Content-type':'application/json'})}
 
 
 @Injectable({
@@ -35,14 +35,28 @@ export class PorfolioService {
   }
 
   AddExp(experiencia: experiencia): Observable<experiencia>{
-    console.log(experiencia);
     return this.http.post<experiencia>(this.apiURL,experiencia,httpOptions);
   }
 
+
+  //Funciones de educacion 
   getEducacion(): Observable<educacion[]>{
     return this.http.get<educacion[]>(this.apiURL2)
   }
+  
+  deleteEducacion(educacion: educacion): Observable<educacion>{
+    console.log(educacion.id)
+    const url=`${this.apiURL2}/${educacion.id}`
+    return this.http.delete<educacion>(url);
+  }
 
+  AddEducacion(educacion: educacion): Observable<educacion>{
+    console.log(educacion)
+    return this.http.post<educacion>(this.apiURL2,educacion,httpOptions);
+  }
+
+  //Funciones de consulta
+   
   getHardskill(): Observable<Hardskill[]>{
     return this.http.get<Hardskill[]>(this.apiURL3)
   }

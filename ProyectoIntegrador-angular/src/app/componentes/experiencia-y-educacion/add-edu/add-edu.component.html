@@ -1,0 +1,71 @@
+<div class="btn-edit" (click)="addEducation()"><a href="#" class="btn-right">
+    <i class="{{showAddEdu? 'fa fa-minus-square-o':'fas fa-plus'}}"></i></a>
+</div>
+
+<form class="add-exp" 
+(ngSubmit)="onSubmit()"
+*ngIf="showAddEdu">
+    <div class="form-group">
+        <label for="text">Institución</label>
+        <input 
+        class="col-sm-6" 
+        type="text" 
+        name="institucion" 
+        id="addinstitucion"
+        [(ngModel)]="institution">
+
+    </div>
+
+    <div class="form-group">
+        <label for="text">Carrera / Título</label>
+        <input 
+        type="text"
+        name="titulo" 
+        id="addtitulo"
+        [(ngModel)]="title"
+        >
+    </div>
+    <div class="form-group">
+        <label for="logo_empresa"> Promedio</label>
+        <input 
+        type="number" 
+        name="logo_empresa" 
+        id="addScore"
+        [(ngModel)]="score"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha inicio</label>
+        <input 
+        type="year" 
+        name="fecha_ini" 
+        id="addInicioEdu"
+        [(ngModel)]="start"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha Fin</label>
+        <input 
+        type="year" 
+        name="Fin" 
+        id="addFinEdu"
+        [(ngModel)]="end"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="logo_empresa"> URL Logo Institución</label>
+        <input 
+        type="string" 
+        name="logo_empresa" 
+        id="addLogoEmp"
+        [(ngModel)]="img"
+        > 
+    </div>
+
+    <button type="submit" class="btn btn-block">Sumar Formación</button>
+
+</form>
+

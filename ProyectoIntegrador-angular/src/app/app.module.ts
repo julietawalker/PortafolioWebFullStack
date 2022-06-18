@@ -12,6 +12,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { FormsModule } from '@angular/forms';
 
 import { AddExperienciaComponent } from './componentes/experiencia-y-educacion/add-experiencia/add-experiencia.component';
+import { AddEduComponent } from './componentes/experiencia-y-educacion/add-edu/add-edu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AddExperienciaComponent } from './componentes/experiencia-y-educacion/a
     ExperienciaYEducacionComponent,
     SkillsComponent,
     ProyectosComponent,
-    AddExperienciaComponent
+    AddExperienciaComponent,
+    AddEduComponent
   ],
 
   imports: [

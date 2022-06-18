@@ -1,8 +1,11 @@
-<div class="btn-edit" onclick=""><a href="#" class="btn-right">
-    <i class="fas fa-plus"></i></a>
+<div class="btn-edit" (click)="addExperiencia()"><a href="#" class="btn-right">
+    <i class="{{showAddexp? 'fa fa-minus-square-o':'fas fa-plus'}}"></i></a>
 </div>
 
-<form class="add-exp" (ngSubmit)="onSubmit()">
+<form class="add-exp" 
+(ngSubmit)="onSubmit()"
+*ngIf="showAddexp">
+
     <div class="form-group">
         <label for="text">Posición</label>
         <input 
@@ -10,8 +13,7 @@
         type="text" 
         name="posicion" 
         id="addposi"
-        [(ngModel)]="position"
-        >
+        [(ngModel)]="position">
 
     </div>
 
@@ -54,7 +56,6 @@
         [(ngModel)]="img"
         > 
     </div>
-
     <button type="submit" class="btn btn-block">Sumar Experiencia</button>
 
 </form>

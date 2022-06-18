@@ -18,6 +18,7 @@
   ],
   "education": [
     {
+      "id": 1,
       "institution": "UTN",
       "title": "Ingeniería Química",
       "img": "https://www.frba.utn.edu.ar/wp-content/uploads/2017/10/Logos-UTN.BA-cs6-fondo-blanco.png",
@@ -26,6 +27,7 @@
       "end": "2014"
     },
     {
+      "id": 2,
       "institution": "UTN",
       "title": "Black Belt en Lean Six Sigma",
       "img": "https://www.frba.utn.edu.ar/wp-content/uploads/2017/10/Logos-UTN.BA-cs6-fondo-blanco.png",
@@ -34,6 +36,7 @@
       "end": "2020"
     },
     {
+      "id": 3,
       "institution": "Ittude",
       "title": "Scrum Master & Product Owner",
       "img": "https://ittude.com.ar/b/wp-content/uploads/2020/03/logo-ittude.png",

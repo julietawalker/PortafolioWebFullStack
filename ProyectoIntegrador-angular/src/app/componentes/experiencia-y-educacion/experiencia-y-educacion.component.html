@@ -1,7 +1,6 @@
 <article class="contenedor1">
   <div class="experiencia-laboral">
-    <app-add-experiencia (onAddExperiencia)="addExperiencia($event)"
-    ></app-add-experiencia>
+    <app-add-experiencia (onAddExperiencia)="addExperiencia($event)"></app-add-experiencia>
     
     <h3>Experiencia</h3>
       <ul class="posiciones">
@@ -17,7 +16,7 @@
               </div>
           </a>
         <div class="editar">
-          <div class="btn-edit" (click)="onDelete(experiencia)"><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
+          <div class="btn-edit" (click)="onDeleteExp(experiencia)"><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
           <div class="btn-edit" (click)="actualizarExp(experiencia)"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         </div>
         </div>
@@ -28,13 +27,13 @@
 
 </article>
 
+
 <article class="contenedor1">
   <div class="educación">
-    <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fas fa-plus"></i></a>
-    </div>
+    <app-add-edu (onAddEducacion)="addEducacion($event)"></app-add-edu>
+     
     <h3>Educación</h3>
-  
-    <ul class="carreras">
+      <ul class="carreras">
       <li *ngFor="let educacion of educacionLista">
         <div class="data-container">
           <a href="#">
@@ -47,7 +46,8 @@
               </div>
           </a>
         <div class="editar">
-          <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
+          <div class="btn-edit" (click)="onDeleteEducacion(educacion)"><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
+          <div class="btn-edit" onclick=><a href="#" class="btn-right"><i class="fa fa-pen"></i></a>
           </div>  
         </div>
         </div>
