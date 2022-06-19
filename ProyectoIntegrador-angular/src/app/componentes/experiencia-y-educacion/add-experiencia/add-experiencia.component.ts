@@ -47,7 +47,6 @@ export class AddExperienciaComponent implements OnInit {
 
     const {position,institution,img, start_year,end_year} =this;
     const newExperience= {position, institution, img, start_year, end_year};
-    console.log(newExperience);
     this.onAddExperiencia.emit(newExperience);
   }
 

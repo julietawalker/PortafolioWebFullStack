@@ -55,6 +55,28 @@ export class PorfolioService {
     return this.http.post<educacion>(this.apiURL2,educacion,httpOptions);
   }
 
+
+  //Funciones de Proyectos 
+
+  getProjectos(): Observable<project[]>{
+    return this.http.get<project[]>(this.apiURL6)
+  }
+
+  UpdateProyecto(proyecto: project): Observable<project>{
+    return this.http.put<project>(`${this.apiURL6}/${proyecto.id}`, proyecto, httpOptions);
+  }
+
+  deleteProyecto(proyecto: project): Observable<project>{
+    const url=`${this.apiURL6}/${proyecto.id}`
+    return this.http.delete<project>(url);
+  }
+
+  AddProyecto(proyecto: project): Observable<project>{
+    return this.http.post<project>(this.apiURL6,proyecto,httpOptions);
+  }
+
+
+
   //Funciones de consulta
    
   getHardskill(): Observable<Hardskill[]>{
@@ -68,8 +90,5 @@ export class PorfolioService {
     return this.http.get<Persona[]>(this.apiURL5)
   }
 
-  getProjectos(): Observable<project[]>{
-    return this.http.get<project[]>(this.apiURL6)
-  }
 
 }

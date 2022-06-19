@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { educacion} from 'src/assets/data/Interfaces';
-import { UiService } from 'src/app/servicios/ui.service';
+import { educacion} from '../../../../assets/data/Interfaces'
+import { UiService } from '../../../servicios/ui.service';
 import { Subscription } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 

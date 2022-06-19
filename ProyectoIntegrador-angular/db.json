@@ -97,12 +97,14 @@
   ],
   "project": [
     {
+      "id": 1,
       "name": "Desarrollo de ciclo energético sustentable para producción de biogás utilizando microalgas",
       "start": "Abr-2013",
       "end": "Dic-2013",
       "description": "Monitoreo de condiciones en el biodigestor y medición del biogás producido."
     },
     {
+      "id": 2,
       "name": "Ingeniería y sustentabilidad ambiental",
       "start": "Abr-2013",
       "end": "Dic-2013",

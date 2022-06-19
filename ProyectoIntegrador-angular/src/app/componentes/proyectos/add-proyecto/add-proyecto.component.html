@@ -1,0 +1,51 @@
+<div class="btn-edit"><a href="#" class="btn-right">
+    <i class="{{showAddProyecto? 'fa fa-minus-square-o':'fas fa-plus'}}" (click)="addProyecto()"></i></a>
+</div>
+
+<form class="add-exp" #myForm="ngForm" id="FormProyecto"
+(ngSubmit)="onSubmit(); myForm.resetForm()"
+*ngIf="showAddProyecto">
+
+    <div class="form-group">
+        <label for="text">Nombre del Proyecto:</label>
+        <input 
+        class="col-sm-6" 
+        type="text" 
+        name="proyecto" 
+        id="addproyecto"
+        [(ngModel)]="name">
+    </div>
+
+    <div class="form-group">
+        <label for="text">Descripción:</label>
+        <input 
+        type="text"
+        name="descripcionProyecto" 
+        id="adddescripcion"
+        [(ngModel)]="description"
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha inicio:</label>
+        <input 
+        type="month" 
+        name="fechaInicioProyecto" 
+        id="addInicioProyecto"
+        [(ngModel)]="start"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha Fin:</label>
+        <input 
+        type="month" 
+        name="Fin" 
+        id="addFinProyecto"
+        [(ngModel)]="end"
+        > 
+    </div>
+
+    <button type="submit" class="btn btn-block">Sumar Proyecto</button>
+
+</form>

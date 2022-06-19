@@ -1,13 +1,15 @@
 <article class="contenedor1">
   <div class="Proyectos">
-    <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fas fa-plus"></i></a></div>
+
+    <app-add-proyecto (onAddProyecto)="addProyecto($event)"></app-add-proyecto>
+
     <h3>Proyectos</h3>
     <ul>
     <li *ngFor="let proyecto of ProyectosList">
       <div class="tituloProyectos">
         <div class="borrar-editar">
-          <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
-          <div class="btn-edit" onclick=""><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+          <div class="btn-edit" (click)="onDeleteProyecto(proyecto)"><a href="#" class="btn-right"><i class="fas fa-trash"></i></a></div>
+          <div class="btn-edit" (click)="editProyecto(proyecto)"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         </div>
         <h5>{{proyecto.name}}</h5>
         <p>{{proyecto.description}}</p>
