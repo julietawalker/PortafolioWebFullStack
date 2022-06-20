@@ -14,6 +14,11 @@ private subject2= new Subject<any>();
 private showAddProyecto: boolean = false;
 private subject3= new Subject<any>();
 
+private showEditarProyecto: boolean = false;
+private subject4= new Subject<any>();
+
+
+
   constructor() { }
 
   toggleAddExp():void{
@@ -24,6 +29,7 @@ private subject3= new Subject<any>();
   onToggle():Observable<any>{
     return this.subject.asObservable();
   }
+
 //Sumar educación
   toggleAddEducation():void{
     this.showAddEducation = !this.showAddEducation;
@@ -43,4 +49,15 @@ private subject3= new Subject<any>();
   onToggle3():Observable<any>{
     return this.subject3.asObservable();
   }
+
+  toggleEditarProyecto():void{
+    this.showEditarProyecto = !this.showEditarProyecto;
+    this.subject4.next(this.showEditarProyecto);
+    console.log(this.showEditarProyecto);
+  }
+  onToggle4():Observable<any>{
+    return this.subject4.asObservable();
+  }
+
+
 }

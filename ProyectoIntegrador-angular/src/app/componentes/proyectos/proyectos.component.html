@@ -2,6 +2,7 @@
   <div class="Proyectos">
 
     <app-add-proyecto (onAddProyecto)="addProyecto($event)"></app-add-proyecto>
+  
 
     <h3>Proyectos</h3>
     <ul>
@@ -17,5 +18,11 @@
       </div>
     </li>
     </ul>
+
+    <app-editar-proyecto 
+    [proyAeditar]="proyectoAeditar" 
+    (editarProyecto)="editarProyecto($event)"
+    [showEditarProyecto]="showEdicionProyecto"
+    ></app-editar-proyecto>
   </div>	
 </article>

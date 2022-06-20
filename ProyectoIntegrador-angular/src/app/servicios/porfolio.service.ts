@@ -62,8 +62,12 @@ export class PorfolioService {
     return this.http.get<project[]>(this.apiURL6)
   }
 
-  UpdateProyecto(proyecto: project): Observable<project>{
-    return this.http.put<project>(`${this.apiURL6}/${proyecto.id}`, proyecto, httpOptions);
+  getProyecto(id: number): Observable<project>{
+    return this.http.get<project>(`${this.apiURL6}/${id}`)
+  }
+
+  UpdateProyecto(proyecto: project, index: number): Observable<project>{
+    return this.http.put<project>(`${this.apiURL6}/${index}`, proyecto, httpOptions);
   }
 
   deleteProyecto(proyecto: project): Observable<project>{

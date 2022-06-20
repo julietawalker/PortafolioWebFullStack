@@ -1,0 +1,48 @@
+<form class="add-proyecto" #myForm="ngForm" id="EditFormProyecto"
+(ngSubmit)="onSubmit(); myForm.resetForm()"
+*ngIf="showEditarProyecto">
+
+    <div class="form-group">
+        <label for="text">Nombre del Proyecto:</label>
+        <input 
+        class="col-sm-6" 
+        type="text" 
+        name="proyecto" 
+        id="addproyecto"
+        [(ngModel)]="name"
+        value="{{proyAeditar.name}}">
+    </div>
+
+    <div class="form-group">
+        <label for="text">Descripción:</label>
+        <input 
+        type="text"
+        name="descripcionProyecto" 
+        id="adddescripcion"
+        [(ngModel)]="description"
+        value="{{proyAeditar.description}}"
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha inicio:</label>
+        <input 
+        type="month" 
+        name="fechaInicioProyecto" 
+        id="addInicioProyecto"
+        [(ngModel)]="start"
+        > 
+    </div>
+
+    <div class="form-group">
+        <label for="date"> Fecha Fin:</label>
+        <input type="month" 
+        name="Fin" 
+        id="addFinProyecto"
+        [(ngModel)]="end"
+        > 
+    </div>
+
+    <button type="submit" class="btn btn-block">Editar Proyecto</button>
+
+</form>

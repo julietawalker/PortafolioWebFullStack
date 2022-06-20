@@ -13,7 +13,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AddExperienciaComponent } from './componentes/experiencia-y-educacion/add-experiencia/add-experiencia.component';
 import { AddEduComponent } from '../app/componentes/experiencia-y-educacion/add-edu/add-edu.component';
-import { AddProyectoComponent } from './componentes/proyectos/add-proyecto/add-proyecto.component';
+import { AddProyectoComponent } from '../app/componentes/proyectos/add-proyecto/add-proyecto.component';
+import { EditarProyectoComponent } from '../app/componentes/proyectos/editar-proyecto/editar-proyecto.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AddProyectoComponent } from './componentes/proyectos/add-proyecto/add-p
     ProyectosComponent,
     AddExperienciaComponent,
     AddEduComponent,
-    AddProyectoComponent
+    AddProyectoComponent,
+    EditarProyectoComponent
   ],
 
   imports: [
